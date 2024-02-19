@@ -146,7 +146,7 @@ header ul li .h.active:after
 .content
 {
 	height: 90vh;
-	background: url(../IMG_2545.JPG);
+	background: url(./IMG_2545.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -214,7 +214,7 @@ header ul li .h.active:after
 	text-align: left;
 	margin-left: 100px;
 	margin-top: 30px;
-	background: url(../img/bg2.png);
+	background: url(./img/bg2.png);
 	background-repeat: no-repeat;
 	background-position: right;
 }
@@ -248,7 +248,7 @@ header ul li .h.active:after
 .features
 {
 	margin-top: 100px;
-	background: url(../IMG_2541.JPG);
+	background: url(./IMG_2541.JPG);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -409,7 +409,7 @@ header ul li .h.active:after
 .follow
 {
 	margin-top: 50px;
-	background: url(../img/bg4.png);
+	background: url(./img/bg4.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
