@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAbIb AI</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/0b1453f29b.js" crossorigin="anonymous"></script>
+	<link rel='icon' href='img/logo.png' type="image/png">
+	<meta property="og:type" content="website">
+    <meta property="og:url" content="https://vealize.my.to/">
+    <meta property="og:title" content="طبیب AI">
+    <meta property="og:description" content="طبیب AI">
+    <meta property="og:image" content="img/page1.png">
+	<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+	<header class="header">
+		<h1>طبیب AI</h1>
+		<ul style="margin-left: 550px;">
+			<li style="float: right;"><a class="h" href="./homepage.html">خانه</a></li>
+			<li style="float: right;"><a class="h" href="#choose">درباره ما</a></li>
+			<li style="float: right;"><a class="h" href="./covid.html">کوید</a></li>
+			<li style="float: right;"><a class="h" href="./braintumor.html">تومور مغزی</a>
+			<li style="float: right;"><a class="h" href="./heartdisease.html">بیماری قلبی</a>
+			<li style="float: right;"><a class="h" href="./alzheimer.html">آلزایمر</a>
+			<li style="float: right;"><a class="h" href="./diabetes.html">دیابت</a>
+		</ul>
+	</header>
+	<div id="content" class="content">
+		<h1 id="homePageTitle">طبیب AI</h1>
+		<p>می کوشیم برای ساده کردن کار انسان ها</p>
+		<button onclick="location.href = '#choose'">بزن بریم</button>
+	</div>
+	<div id="choose" class="choose">
+		<h1 id="chooseTitle" class="chooseTitle">درباره ما</h1>
+		<div class="chooseDesc">
+			<p>این سایت به صورت آنلاین  با یک <B>هوش مصنوعی</B> خفن افراد را ویضیت می کند با استفاده از سی تی اسکن :</p>
+			<h2>با ویژگی هایی از جمله </h2>
+			<h2>1_ کمک در صرفه جویی در زمان بدون اتلاف وقت </h2>
+			<h2>ویضیت بدست هوش مصنوعی انجام میشود کاملا رایگان _2</h2>
+		</div>
+	</div>
+	<div id="features" class="features">
+		<div class="featuresTitle">
+			<b><h2>ویژگی های سایت</h2></b>
+		</div>
+		<div class="featureCardWrapper">
+			<div class="featureCard">
+				<h2>تشخیص کوید 19</h2>
+				<!-- <p>Visualize Double Pendulum in a new and unique way!</p> -->
+				<a href="./covid.html">
+					<button onclick="location.href = 'pendulum.html'">ادامه کار</button>
+				</a>
+			</div>
+			<div class="featureCard">
+				<h2>تشخیص تومور مغزی</h2>
+				<!-- <p>Visualize any github repositories with each and every detail with graphs and more!</p> -->
+				<a href="./braintumor.html">
+					<button onclick="location.href = 'github.html'">ادامه کار</button>
+				</a>
+			</div>
+			<div class="featureCard">
+				<h2>تشخیص بیماری قلبی</h2>
+				<!-- <p>Visualize your own data (X and Y labels) with 4 types of graphs!</p> -->
+				<a href="./heartdisease.html">
+					<button onclick="location.href = 'own.html'">ادامه کار</button>
+				</a>
+			</div>
+		</div>
+		<div class="featureCardWrapper">
+			<div class="featureCard">
+				<h2>تشخیص آلزایمر</h2>
+				<!-- <p>Visualize any equation's root plot with solutions and number line!</p> -->
+				<a href="./alzheimer.html">
+					<button onclick="location.href = 'maths.html'">ادامه کار</button>
+				</a>
+			</div>
+			<div class="featureCard">
+				<h2>تشخیص دیابت</h2>
+				<!-- <p>Visualize your code with line-to-line execution and much more!</p> -->
+				<a href="./diabetes.html">
+					<button onclick="location.href = 'code.html'">ادامه کار</button>
+				</a>
+			</div>
+			<div class="featureCard">
+				<h2>تشخیص ذات الریه</h2>
+				<!-- <p>Visualize the GDP Growth of world's several countries in the form of a barchart race!</p> -->
+				<a href="./pneumonia.html">
+					<button onclick="location.href = 'barchart.html'">ادامه کار</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<img src="./1584-093915.jpg" alt=""  style="float: right; margin-right: 300px; margin-bottom: 150px" width="200px">
+	<img src="./photo4645614936.jpg" alt=""  style="float: right; margin-right: 300px; margin-bottom: 150px" width="200px">
+	
+	<script type="text/javascript">
+	var cat = $('.header').offset().top;
+
+	$(window).scroll(function() {                  
+	var cs = $(window).scrollTop(); 
+	if (cs > cat) {           
+	    $('.header').css({     
+			color: '#80ed99',                 
+	        position: 'fixed',
+	        top: '0',
+	        left: '0',
+	        width: '100%',
+	        background: 'rgb(2, 10, 20)'
+	    });
+	    $('.header').css("padding-top", "5px");
+	    $('.header').css("color", "#80ed99");
+	    $('.header').css("border-bottom", "1px solid rgb(2, 10, 20)");
+	    $('.h').css("color", "#80ed99");
+	    $('.h.active').css("color", "#ff0158");
+	} else {                                   
+	    $('.header').css({                     
+	        position: 'relative',
+	        width: 'auto'
+	    });
+	    $('.header').css('background', '#79dbc5')
+	    $('.header').css("padding-top", "30px");
+	    $('.header').css("color", "rgb(2, 10, 20)");
+	    $('.header').css("border-bottom", "none");
+	    $('.h').css("color", "rgb(2, 10, 20)");
+	    $('.h.active').css("color", "#ff0158");
+	}
+	var ch = $('.choose').offset().top;
+	var hm = $('.content').offset().top;
+	var fe = $('.features').offset().top;
+	var co = $('.contact').offset().top;
+
+	if (cs >= (co - 150))
+	{
+		$('.active').removeClass('active')
+		$('#contactNav').addClass('active')
+	} else if (cs >= (fe - 100))
+	{
+		$('.active').removeClass('active')
+		$('#featuresNav').addClass('active')
+	} else if (cs >= (ch - 150))
+	{
+		$('.active').removeClass('active')
+		$('#aboutNav').addClass('active')
+	} else if (cs >= hm)
+	{
+		$('.active').removeClass('active')
+		$('#homeNav').addClass('active')
+	}
+	});
+	$('.fa-facebook-f').on('click', function(){location.href = 'https://www.facebook.com/watch/?ref=search&v=1871380356472917'})
+	$('.fa-instagram').on('click', function(){location.href = 'https://www.instagram.com/p/ByxLEsQnrzY/'})
+	$('.fa-twitter').on('click', function(){location.href = 'https://twitter.com/TechWithTimm'})
+	$('.fa-youtube').on('click', function(){location.href = 'https://www.youtube.com/watch?v=eGE-tFalwpA'})
+	$('.fa-envelope').on('click', function(){location.href = 'mailto:randomemail@fineloans.org'})
+	</script>
+</body>
+<script type="text/javascript">
+	function sendMsg(){
+		var name = document.getElementById("nameInput").value.trim()
+		var email = document.getElementById("emailInput").value.trim()
+		var msg = document.getElementById("msgInput").value.trim()
+		var form = new FormData();
+		form.append("name", name)
+		form.append("email", email)
+		form.append("msg", msg)
+		fetch("https://vealizeapi.root.sx/contact", {method: "post", body: form})
+			.then(e => window.alert("Message sent successfully!"))
+	}
+</script>
+</html>
